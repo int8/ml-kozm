@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Module 7 - Machine Learning</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<style>
+			.smaller {
+			  font-size: 16px;
+			}
+		  </style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>Module 7 - Machine Learning</h3>
+					<img src="http://localhost:8000/public/images/logo.png" height="25%"  width="25%">
+
+					<div class="medium">
+						Kamil Czarnogórski <br />
+						kamil@czarnogorski.pl <br />
+						int8@github
+					</div>
+
+
+				</section>
+				<section><h3>Linear Regression</h3> </section>
+				<section><h3>Linear Regression</h3>
+					<img style="background-color: #ccc;" src="http://localhost:8000/public/images/regression.png" height="50%"  width="50%">
+					<p class="smaller">
+						Regression because our target variable is <b style="color:green">continuous</b>, linear because we assume <b style="color:green">linear</b> dependency. <br /> We <b  style="color:green">model</b> relation between variables as linear
+					</p>
+				</section>
+
+				<section><h3>Linear Regression </h3>
+					<img style="background-color: #ccc;" src="http://localhost:8000/public/images/regression.png" height="50%"  width="50%">
+				 \[\begin{aligned}
+				  y = ax + b
+				  \end{aligned} \]
+				</section>
+
+
+				<section><h3>Linear Regression </h3>
+					<img style="background-color: #ccc;" src="http://localhost:8000/public/images/regression.png" height="50%"  width="50%">
+					<p class="smaller"> More generally </p>
+				 \[\begin{aligned}
+				  y = w_n x_n + w_{n-1} x_{n-1} + \dots + w_0 x_0 + b
+				  \end{aligned} \]
+				</section>
+
+				<section><h3>Exercise: </h3>
+					<img src="http://localhost:8000/public/images/brain.png" height="10%"  width="10%">
+					<p class="smaller">
+						You've applied for a data scientist position at a company that specializes in enhancing advertising campaigns.
+						Your first warm-up task is to develop a linear model that predicts sales from the money spent on advertising through various channels like TV, radio, and the internet.
+						<br /><br /><br />
+						<b>be careful: dataset is exported directly from a company database. Client informed you that system has gone through technical issues and some rows may be invalid </b>
+					</p>
+
+				</section>
+
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath]
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Module 7 - Machine Learning</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<style>
+			.smaller {
+			  font-size: 16px;
+			}
+		  </style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>Module 7 - Machine Learning</h3>
+					<img src="http://localhost:8000/public/images/logo.png" height="25%"  width="25%"> 
+					
+					<div class="medium">
+						Kamil Czarnogórski <br />
+						kamil@czarnogorski.pl <br />						
+						int8@github
+					</div>
+					
+					
+				</section>
+				<section><h3>Brief AI history</h3> </section>
+				<section><h3>Turing Test / imitation game (1950)</h3> 
+					<img src="http://localhost:8000/public/images/turing.jpg" height="25%"  width="25%"> 
+					<p class="smaller">
+						Addressing theoretical/philosophical question about when computer can be considered intelligent 
+					</p>
+				</section>
+
+				<section><h3>Rosenblatt's Perceptron (1957)</h3> 
+					<img style="background-color: #ccc;" src="http://localhost:8000/public/images/perceptron.png" height="50%"  width="50%"> 
+					<p class="smaller">Rosenblatt's neuron is very similar to neurons we see today in neural networks</p>
+				</section>
+
+				<section><h3>Rosenblatt's Perceptron (1957)</h3> 
+					<img style="background-color: #ccc;" src="http://localhost:8000/public/images/rosen.png" height="50%"  width="50%"> 
+					<p class="smaller">"Later perceptrons will be able to recognize people, instantly translate speech or writing to another language"</p>
+				</section>
+
+
+				<section><h3>AI winter (1970')</h3> 
+					<img src="http://localhost:8000/public/images/walle.jpg" height="50%"  width="50%"> 
+				</section>
+
+
+				<section><h3>Expert systems with Prolog (1980)</h3> 
+					<img src="http://localhost:8000/public/images/prolog.png" height="20%"  width="20%">
+					<p class="smaller">
+						Given knowledge base and set of logical rules Prolog let's you ask questions about the underlying domain and solves it with formal logic and logic programming 
+					</p>
+				</section>
+
+				<section><h3>IBM Deep Blue chess engine (1997)</h3> 
+					<img src="http://localhost:8000/public/images/deepblue.jpg" height="50%"  width="50%"> 
+					<div> Kasparov loses to Deep Blue </div>
+					<p class="smaller">
+						Deep Blue uses min-max graph search algorithm + alpha-beta pruning + smart evaluation function
+					</p>
+				</section>
+				<section><h5>GPU computational power increase <br /> optimization algorithms improvements <br /> open source software <br />(2006 - 2012)</h5> 
+					
+					<img src="http://localhost:8000/public/images/hinton.jpeg" height="30%"  width="30%"> 
+					<p class="smaller">	
+						AdaGrad / Adam / CUDA nvidia software / pandas / numpy / tensorflow / torch
+					</p>
+				</section>
+
+				<section><h3>Alpha Go (2016)</h3> 
+					<video src="http://localhost:8000/public/images/pi2.mp4" height="70%"  width="70%"></video>	
+					<p class="smaller"> scene from "Pi" (1998) by Aronofsky  </p>
+				</section>
+
+				<section><h3>Alpha Go (2016)</h3> 
+					<img src="http://localhost:8000/public/images/lee.jpg" height="50%"  width="50%">		
+					<p class="smaller"> Monte Carlo Tree Search + Deep Neural Networks to evaluate position / decide candidate moves  </p>				
+				</section>
+
+				<section><h3>Libratus (2017) - no limit Texas hold'em heads up playing bot 
+				</h3> 
+					<img src="http://localhost:8000/public/images/malkovich.webp" height="50%"  width="50%">
+					<p class="smaller"> Counterfactual Regret Optimization / game theory  </p>
+				</section>
+
+				<section><h3>Transformers (2017)</h3> 
+					<img src="http://localhost:8000/public/images/transformer.webp" height="35%"  width="35%">
+					<p class="smaller"> Counterfactual Regret Optimization / game theory  </p>
+				</section>
+
+				<section><h3>GPT-3 (2020)</h3> 
+					<img src="http://localhost:8000/public/images/openai.jpg" height="50%"  width="50%">
+					<p class="smaller"> 2048-tokens-long context, 175B parameters (350G VRAM required) </p>
+				</section>
+
+				<section><h3>ChatGPT (2022)</h3> 
+					<img src="http://localhost:8000/public/images/chatgpt.png" height="35%"  width="35%">
+					<p class="smaller"> GPT-3.5 model fine-tuned with instruction fine-tuning </p>
+				</section>
+
+				<section><h3>GPT-4 (2023-03-14)</h3> 
+					<img src="http://localhost:8000/public/images/openai.jpg" height="50%"  width="50%">
+					<p class="smaller"> 128k tokens-long context, unknown number of parameters</p>
+				</section>
+
+				<section><h3>DALLE-3 (Nov 2023)</h3> 
+					<img src="http://localhost:8000/public/images/cat.jpeg" height="70%"  width="70%">
+					<p class="smaller"> Generative AI capable of generating images</p>
+				</section>
+
+				<section><h3>Gemini 1.5 from Google</h3> 
+					<img src="http://localhost:8000/public/images/gemini.webp" height="50%"  width="50%">
+					<p class="smaller"> 1M context </p>
+				</section>
+
+				<section><h3>SORA from OpenAI</h3> 
+					<video src="http://localhost:8000/public/images/sora.mp4" height="70%"  width="70%"></video>						
+				</section>
+
+				<section><h5>Open Source Alternatives  <br /> Mistral / Llama / Stable Diffusion</h5> 
+					<img src="http://localhost:8000/public/images/models.webp" height="50%"  width="50%">
+					<p class="smaller"> Model size does not matter that much </p>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>yes 
+	</body>
+</html>
