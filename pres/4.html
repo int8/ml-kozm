@@ -22,8 +22,8 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
-					<h3>Module 7 - Machine Learning</h3>
+	<section>
+					<h3>Wstęp do Uczenia Maszynowego</h3>
 					<img src="http://localhost:8000/public/images/logo.png" height="25%"  width="25%">
 
 					<div class="medium">
@@ -34,15 +34,15 @@
 
 
 				</section>
-				<section><h3>Linear Regression</h3> </section>
-				<section><h3>Linear Regression</h3>
+				<section><h3>Regresja Liniowa</h3> </section>
+				<section><h3>Regresja Liniowa</h3>
 					<img style="background-color: #ccc;" src="http://localhost:8000/public/images/regression.png" height="50%"  width="50%">
 					<p class="smaller">
-						Regression because our target variable is <b style="color:green">continuous</b>, linear because we assume <b style="color:green">linear</b> dependency. <br /> We <b  style="color:green">model</b> relation between variables as linear
+						Regresja ponieważ nasza zmienna wyjaśniana (target) jest <b style="color:green">ciągła</b>, liniowa ponieważ zakładamy <b style="color:green">liniową</b> zależność między tą zmienną a zmiennymi wyjaśniającymi. <br /> <br /> Modelujemy więc relację między zmiennymi jako liniową
 					</p>
 				</section>
 
-				<section><h3>Linear Regression </h3>
+				<section><h3>Regresja Liniowa </h3>
 					<img style="background-color: #ccc;" src="http://localhost:8000/public/images/regression.png" height="50%"  width="50%">
 				 \[\begin{aligned}
 				  y = ax + b
@@ -50,21 +50,32 @@
 				</section>
 
 
-				<section><h3>Linear Regression </h3>
+				<section><h3>Regresja Liniowa </h3>
 					<img style="background-color: #ccc;" src="http://localhost:8000/public/images/regression.png" height="50%"  width="50%">
-					<p class="smaller"> More generally </p>
+					<p class="smaller"> Bardziej ogólnie </p>
 				 \[\begin{aligned}
 				  y = w_n x_n + w_{n-1} x_{n-1} + \dots + w_0 x_0 + b
 				  \end{aligned} \]
 				</section>
 
-				<section><h3>Exercise: </h3>
+				<section><h3> Co oznacza dopasowanie regresji liniowej? </h3>
+					<img style="background-color: #ccc;" src="http://localhost:8000/public/images/mse.webp" height="60%"  width="60%">
+					<p class="smaller">
+						Oznacza to optymalizację (minimalizację) błędu MSE
+					    \[\begin{aligned}
+					       MSE = \frac{1}{N} \sum^{N}_{i=1} (y_i - y^{\prime}_i)^2
+						\end{aligned} \]
+					</p>
+
+				</section>
+
+				<section><h3>Ćwiczenie: </h3>
 					<img src="http://localhost:8000/public/images/brain.png" height="10%"  width="10%">
 					<p class="smaller">
-						You've applied for a data scientist position at a company that specializes in enhancing advertising campaigns.
-						Your first warm-up task is to develop a linear model that predicts sales from the money spent on advertising through various channels like TV, radio, and the internet.
+						Złożyłeś podanie o pracę na stanowisko data scientist w firmie specjalizującej się w usprawnianiu kampanii reklamowych.
+						Twoje pierwsze zadanie to stworzenie modelu liniowego, który przewiduje sprzedaż w oparciu o wydatki na reklamę poprzez różne kanały, takie jak telewizja, radio i internet.
 						<br /><br /><br />
-						<b>be careful: dataset is exported directly from a company database. Client informed you that system has gone through technical issues and some rows may be invalid </b>
+						<b>uwaga: zbiór danych jest eksportowany bezpośrednio z bazy danych firmy. Klient poinformował Cię, że system przeszedł problemy techniczne i niektóre wiersze mogą być nieprawidłowe </b>
 					</p>
 
 				</section>

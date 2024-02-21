@@ -21,120 +21,237 @@
 	</head>
 	<body>
 		<div class="reveal">
+<!--			<div class="slides">-->
+<!--				<section>-->
+<!--					<h3>Module 7 - Machine Learning</h3>-->
+<!--					<img src="http://localhost:8000/public/images/logo.png" height="25%"  width="25%"> -->
+<!--					-->
+<!--					<div class="medium">-->
+<!--						Kamil Czarnogórski <br />-->
+<!--						kamil@czarnogorski.pl <br />						-->
+<!--						int8@github-->
+<!--					</div>-->
+<!--					-->
+<!--					-->
+<!--				</section>-->
+<!--				<section><h3>Brief AI history</h3> </section>-->
+<!--				<section><h3>Turing Test / imitation game (1950)</h3> -->
+<!--					<img src="http://localhost:8000/public/images/turing.jpg" height="25%"  width="25%"> -->
+<!--					<p class="smaller">-->
+<!--						Addressing theoretical/philosophical question about when computer can be considered intelligent -->
+<!--					</p>-->
+<!--				</section>-->
+
+<!--				<section><h3>Rosenblatt's Perceptron (1957)</h3> -->
+<!--					<img style="background-color: #ccc;" src="http://localhost:8000/public/images/perceptron.png" height="50%"  width="50%"> -->
+<!--					<p class="smaller">Rosenblatt's neuron is very similar to neurons we see today in neural networks</p>-->
+<!--				</section>-->
+
+<!--				<section><h3>Rosenblatt's Perceptron (1957)</h3> -->
+<!--					<img style="background-color: #ccc;" src="http://localhost:8000/public/images/rosen.png" height="50%"  width="50%"> -->
+<!--					<p class="smaller">"Later perceptrons will be able to recognize people, instantly translate speech or writing to another language"</p>-->
+<!--				</section>-->
+
+
+<!--				<section><h3>AI winter (1970')</h3> -->
+<!--					<img src="http://localhost:8000/public/images/walle.jpg" height="50%"  width="50%"> -->
+<!--				</section>-->
+
+
+<!--				<section><h3>Expert systems with Prolog (1980)</h3> -->
+<!--					<img src="http://localhost:8000/public/images/prolog.png" height="20%"  width="20%">-->
+<!--					<p class="smaller">-->
+<!--						Given knowledge base and set of logical rules Prolog let's you ask questions about the underlying domain and solves it with formal logic and logic programming -->
+<!--					</p>-->
+<!--				</section>-->
+
+<!--				<section><h3>IBM Deep Blue chess engine (1997)</h3> -->
+<!--					<img src="http://localhost:8000/public/images/deepblue.jpg" height="50%"  width="50%"> -->
+<!--					<div> Kasparov loses to Deep Blue </div>-->
+<!--					<p class="smaller">-->
+<!--						Deep Blue uses min-max graph search algorithm + alpha-beta pruning + smart evaluation function-->
+<!--					</p>-->
+<!--				</section>-->
+<!--				<section><h5>GPU computational power increase <br /> optimization algorithms improvements <br /> open source software <br />(2006 - 2012)</h5> -->
+<!--					-->
+<!--					<img src="http://localhost:8000/public/images/hinton.jpeg" height="30%"  width="30%"> -->
+<!--					<p class="smaller">	-->
+<!--						AdaGrad / Adam / CUDA nvidia software / pandas / numpy / tensorflow / torch-->
+<!--					</p>-->
+<!--				</section>-->
+
+<!--				<section><h3>Alpha Go (2016)</h3> -->
+<!--					<video src="http://localhost:8000/public/images/pi2.mp4" height="70%"  width="70%"></video>	-->
+<!--					<p class="smaller"> scene from "Pi" (1998) by Aronofsky  </p>-->
+<!--				</section>-->
+
+<!--				<section><h3>Alpha Go (2016)</h3> -->
+<!--					<img src="http://localhost:8000/public/images/lee.jpg" height="50%"  width="50%">		-->
+<!--					<p class="smaller"> Monte Carlo Tree Search + Deep Neural Networks to evaluate position / decide candidate moves  </p>				-->
+<!--				</section>-->
+
+<!--				<section><h3>Libratus (2017) - no limit Texas hold'em heads up playing bot -->
+<!--				</h3> -->
+<!--					<img src="http://localhost:8000/public/images/malkovich.webp" height="50%"  width="50%">-->
+<!--					<p class="smaller"> Counterfactual Regret Optimization / game theory  </p>-->
+<!--				</section>-->
+
+<!--				<section><h3>Transformers (2017)</h3> -->
+<!--					<img src="http://localhost:8000/public/images/transformer.webp" height="35%"  width="35%">-->
+<!--					<p class="smaller"> Counterfactual Regret Optimization / game theory  </p>-->
+<!--				</section>-->
+
+<!--				<section><h3>GPT-3 (2020)</h3> -->
+<!--					<img src="http://localhost:8000/public/images/openai.jpg" height="50%"  width="50%">-->
+<!--					<p class="smaller"> 2048-tokens-long context, 175B parameters (350G VRAM required) </p>-->
+<!--				</section>-->
+
+<!--				<section><h3>ChatGPT (2022)</h3> -->
+<!--					<img src="http://localhost:8000/public/images/chatgpt.png" height="35%"  width="35%">-->
+<!--					<p class="smaller"> GPT-3.5 model fine-tuned with instruction fine-tuning </p>-->
+<!--				</section>-->
+
+<!--				<section><h3>GPT-4 (2023-03-14)</h3> -->
+<!--					<img src="http://localhost:8000/public/images/openai.jpg" height="50%"  width="50%">-->
+<!--					<p class="smaller"> 128k tokens-long context, unknown number of parameters</p>-->
+<!--				</section>-->
+
+<!--				<section><h3>DALLE-3 (Nov 2023)</h3> -->
+<!--					<img src="http://localhost:8000/public/images/cat.jpeg" height="70%"  width="70%">-->
+<!--					<p class="smaller"> Generative AI capable of generating images</p>-->
+<!--				</section>-->
+
+<!--				<section><h3>Gemini 1.5 from Google</h3> -->
+<!--					<img src="http://localhost:8000/public/images/gemini.webp" height="50%"  width="50%">-->
+<!--					<p class="smaller"> 1M context </p>-->
+<!--				</section>-->
+
+<!--				<section><h3>SORA from OpenAI</h3> -->
+<!--					<video src="http://localhost:8000/public/images/sora.mp4" height="70%"  width="70%"></video>						-->
+<!--				</section>-->
+
+<!--				<section><h5>Open Source Alternatives  <br /> Mistral / Llama / Stable Diffusion</h5> -->
+<!--					<img src="http://localhost:8000/public/images/models.webp" height="50%"  width="50%">-->
+<!--					<p class="smaller"> Model size does not matter that much </p>-->
+<!--				</section>-->
+<!--			</div>-->
 			<div class="slides">
-				<section>
-					<h3>Module 7 - Machine Learning</h3>
-					<img src="http://localhost:8000/public/images/logo.png" height="25%"  width="25%"> 
-					
-					<div class="medium">
-						Kamil Czarnogórski <br />
-						kamil@czarnogorski.pl <br />						
-						int8@github
-					</div>
-					
-					
-				</section>
-				<section><h3>Brief AI history</h3> </section>
-				<section><h3>Turing Test / imitation game (1950)</h3> 
-					<img src="http://localhost:8000/public/images/turing.jpg" height="25%"  width="25%"> 
-					<p class="smaller">
-						Addressing theoretical/philosophical question about when computer can be considered intelligent 
-					</p>
-				</section>
+	<section>
+		<h3> Wstęp do Uczenia Maszynowego</h3>
+		<img src="http://localhost:8000/public/images/logo.png" height="25%" width="25%">
 
-				<section><h3>Rosenblatt's Perceptron (1957)</h3> 
-					<img style="background-color: #ccc;" src="http://localhost:8000/public/images/perceptron.png" height="50%"  width="50%"> 
-					<p class="smaller">Rosenblatt's neuron is very similar to neurons we see today in neural networks</p>
-				</section>
-
-				<section><h3>Rosenblatt's Perceptron (1957)</h3> 
-					<img style="background-color: #ccc;" src="http://localhost:8000/public/images/rosen.png" height="50%"  width="50%"> 
-					<p class="smaller">"Later perceptrons will be able to recognize people, instantly translate speech or writing to another language"</p>
-				</section>
+		<div class="medium">
+			Kamil Czarnogórski <br />
+			kamil@czarnogorski.pl <br />
+			int8@github
+		</div>
 
 
-				<section><h3>AI winter (1970')</h3> 
-					<img src="http://localhost:8000/public/images/walle.jpg" height="50%"  width="50%"> 
-				</section>
+	</section>
+	<section><h3>Krótka historia AI</h3> </section>
+	<section><h3>Test Turinga (imitation game) /1950</h3>
+		<img src="http://localhost:8000/public/images/imitation.webp" height="45%" width="45%">
+		<p class="smaller">
+			teoretyczne/filozoficzne pytanie o to, kiedy komputer może być uznany za inteligentny
+		</p>
+	</section>
 
+	<section><h3>Perceptron Rosenblatta (1957)</h3>
+		<img style="background-color: #ccc;" src="http://localhost:8000/public/images/perceptron.png" height="50%" width="50%">
+		<p class="smaller">Neuron Rosenblatta jest bardzo podobny do neuronów, które widzimy dzisiaj w sieciach neuronowych</p>
+	</section>
 
-				<section><h3>Expert systems with Prolog (1980)</h3> 
-					<img src="http://localhost:8000/public/images/prolog.png" height="20%"  width="20%">
-					<p class="smaller">
-						Given knowledge base and set of logical rules Prolog let's you ask questions about the underlying domain and solves it with formal logic and logic programming 
-					</p>
-				</section>
+	<section><h3>Perceptron Rosenblatta (1957)</h3>
+		<img style="background-color: #ccc;" src="http://localhost:8000/public/images/rosen.png" height="50%" width="50%">
+		<p class="smaller">"Późniejsze perceptrony będą mogły rozpoznawać ludzi, natychmiastowo tłumaczyć mowę lub pismo na inny język"</p>
+	</section>
 
-				<section><h3>IBM Deep Blue chess engine (1997)</h3> 
-					<img src="http://localhost:8000/public/images/deepblue.jpg" height="50%"  width="50%"> 
-					<div> Kasparov loses to Deep Blue </div>
-					<p class="smaller">
-						Deep Blue uses min-max graph search algorithm + alpha-beta pruning + smart evaluation function
-					</p>
-				</section>
-				<section><h5>GPU computational power increase <br /> optimization algorithms improvements <br /> open source software <br />(2006 - 2012)</h5> 
-					
-					<img src="http://localhost:8000/public/images/hinton.jpeg" height="30%"  width="30%"> 
-					<p class="smaller">	
-						AdaGrad / Adam / CUDA nvidia software / pandas / numpy / tensorflow / torch
-					</p>
-				</section>
+	<section><h3> AI Winter (lata 70')</h3>
+		<img src="http://localhost:8000/public/images/walle.jpg" height="50%" width="50%">
+	</section>
 
-				<section><h3>Alpha Go (2016)</h3> 
-					<video src="http://localhost:8000/public/images/pi2.mp4" height="70%"  width="70%"></video>	
-					<p class="smaller"> scene from "Pi" (1998) by Aronofsky  </p>
-				</section>
+	<section><h3>Systemy eksperckie / Prolog (1980)</h3>
+		<img src="http://localhost:8000/public/images/prolog.png" height="20%" width="20%">
+		<p class="smaller">
+			Mając bazę wiedzy i zestaw reguł logicznych Prolog pozwala zadawać pytania oraz znajduje odpowiedzi pomocą logiki formalnej i programowania logicznego
+		</p>
+	</section>
 
-				<section><h3>Alpha Go (2016)</h3> 
-					<img src="http://localhost:8000/public/images/lee.jpg" height="50%"  width="50%">		
-					<p class="smaller"> Monte Carlo Tree Search + Deep Neural Networks to evaluate position / decide candidate moves  </p>				
-				</section>
+	<section><h3>IBM Deep Blue (1997)</h3>
+		<img src="http://localhost:8000/public/images/deepblue.jpg" height="50%" width="50%">
+		<div> Kasparow przegrywa z Deep Blue </div>
+		<p class="smaller">
+			Deep Blue używa algorytmu wyszukiwania grafu min-max +  alfa-beta pruning + inteligentna funkcja oceny
+		</p>
+	</section>
+	<section><h5>Wzrost mocy obliczeniowej GPU <br /> udoskonalenia algorytmów optymalizacyjnych <br /> oprogramowanie open source <br />(2006 - 2012)</h5>
 
-				<section><h3>Libratus (2017) - no limit Texas hold'em heads up playing bot 
-				</h3> 
-					<img src="http://localhost:8000/public/images/malkovich.webp" height="50%"  width="50%">
-					<p class="smaller"> Counterfactual Regret Optimization / game theory  </p>
-				</section>
+		<img src="http://localhost:8000/public/images/hinton.jpeg" height="30%" width="30%">
+		<p class="smaller">
+			AdaGrad / Adam / oprogramowanie CUDA nvidia / pandas / numpy / tensorflow / torch
+		</p>
+	</section>
 
-				<section><h3>Transformers (2017)</h3> 
-					<img src="http://localhost:8000/public/images/transformer.webp" height="35%"  width="35%">
-					<p class="smaller"> Counterfactual Regret Optimization / game theory  </p>
-				</section>
+	<section><h3>Alpha Go (2016)</h3>
+		<video src="http://localhost:8000/public/images/pi2.mp4" height="70%" width="70%"></video>
+		<p class="smaller"> scena z "Pi" (1998) autorstwa Aronofsky'ego </p>
+	</section>
 
-				<section><h3>GPT-3 (2020)</h3> 
-					<img src="http://localhost:8000/public/images/openai.jpg" height="50%"  width="50%">
-					<p class="smaller"> 2048-tokens-long context, 175B parameters (350G VRAM required) </p>
-				</section>
+	<section><h3>Alpha Go (2016)</h3>
+		<img src="http://localhost:8000/public/images/lee.jpg" height="50%" width="50%">
+		<p class="smaller">  Monte Carlo Tree Search + głębokie sieci neuronowe do oceny pozycji </p>
+	</section>
 
-				<section><h3>ChatGPT (2022)</h3> 
-					<img src="http://localhost:8000/public/images/chatgpt.png" height="35%"  width="35%">
-					<p class="smaller"> GPT-3.5 model fine-tuned with instruction fine-tuning </p>
-				</section>
+	<section><h3>Libratus (2017) - head's up texas holdem no limit bot
+	</h3>
+		<img src="http://localhost:8000/public/images/malkovich.webp" height="50%" width="50%">
+		<p class="smaller"> Counterfactual Regret Optimization / teoria gier </p>
+	</section>
 
-				<section><h3>GPT-4 (2023-03-14)</h3> 
-					<img src="http://localhost:8000/public/images/openai.jpg" height="50%"  width="50%">
-					<p class="smaller"> 128k tokens-long context, unknown number of parameters</p>
-				</section>
+	<section><h3>Transformery (2017)</h3>
+		<img src="http://localhost:8000/public/images/transformer.webp" height="35%" width="35%">
+		<p class="smaller"> Encoder / Decoder </p>
+	</section>
 
-				<section><h3>DALLE-3 (Nov 2023)</h3> 
-					<img src="http://localhost:8000/public/images/cat.jpeg" height="70%"  width="70%">
-					<p class="smaller"> Generative AI capable of generating images</p>
-				</section>
+	<section><h3>GPT-3 (2020)</h3>
+		<img src="http://localhost:8000/public/images/openai.jpg" height="50%" width="50%">
+		<p class="smaller"> Kontekst długości 2048 tokenów, 175 mld parametrów (wymagane 350 GB VRAM) </p>
+	</section>
 
-				<section><h3>Gemini 1.5 from Google</h3> 
-					<img src="http://localhost:8000/public/images/gemini.webp" height="50%"  width="50%">
-					<p class="smaller"> 1M context </p>
-				</section>
+	<section><h3>ChatGPT (2022)</h3>
+		<img src="http://localhost:8000/public/images/chatgpt.png" height="35%" width="35%">
+		<p class="smaller"> Model GPT-3.5 douczony za pomocą metody Instruction Fine-Tuning </p>
+	</section>
 
-				<section><h3>SORA from OpenAI</h3> 
-					<video src="http://localhost:8000/public/images/sora.mp4" height="70%"  width="70%"></video>						
-				</section>
+	<section><h3>GPT-4 (2023-03-14)</h3>
+		<img src="http://localhost:8000/public/images/openai.jpg" height="50%" width="50%">
+		<p class="smaller"> Kontekst długości 128k tokenów, nieznana liczba parametrów</p>
+	</section>
 
-				<section><h5>Open Source Alternatives  <br /> Mistral / Llama / Stable Diffusion</h5> 
-					<img src="http://localhost:8000/public/images/models.webp" height="50%"  width="50%">
-					<p class="smaller"> Model size does not matter that much </p>
-				</section>
-			</div>
+	<section><h3>DALLE-3 (listopad 2023)</h3>
+		<img src="http://localhost:8000/public/images/cat.jpeg" height="70%" width="70%">
+		<p class="smaller"> Generatywne AI produkujące realistyczne zdjęcia wysokiej rozdzielczości</p>
+	</section>
+
+	<section><h3>Gemini 1.5 od Google</h3>
+		<img src="http://localhost:8000/public/images/gemini.webp" height="50%" width="50%">
+		<p class="smaller"> LLM od Google / kontekst wielkości 1M tokenów  </p>
+	</section>
+
+	<section><h3>SORA od OpenAI</h3>
+		<iframe src="https://www.youtube.com/embed/HK6y8DAPN_0" height="400" width="800" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+	</section>
+
+	<section><h5>Alternatywy open source <br /> Mistral / Llama / Stable Diffusion</h5>
+		<img src="http://localhost:8000/public/images/models.webp" height="50%" width="50%">
+		<p class="smaller"> Wielkość modelu zdaje się chwilowo nie mieć znaczenia </p>
+	</section>
+
+	<section><h5>Jakich rozwiązań AI możemy spodziewać się w przyszłości </h5>
+
+		<p style="font-size: 300px;"><b>?</b></p>
+	</section>
+</div>
 		</div>
 
 		<script src="dist/reveal.js"></script>

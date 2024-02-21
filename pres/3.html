@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Module 7 - Machine Learning</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<style>
+			.smaller {
+			  font-size: 16px;
+			}
+		  </style>
+	</head>
+	<body>
+		<div class="reveal">
+
+			<div class="slides">
+	<section>
+		<h3> Wstęp do Uczenia Maszynowego</h3>
+		<img src="http://localhost:8000/public/images/logo.png" height="25%" width="25%">
+
+		<div class="medium">
+			Kamil Czarnogórski <br />
+			kamil@czarnogorski.pl <br />
+			int8@github
+		</div>
+
+
+	</section>
+	<section><h3>Uczenie maszynowe <br /><br /> trening <br/> inferencja </h3> </section>
+	<section><h3>Co to jest model uczenia maszynowego? </h3>
+		<img src="http://localhost:8000/public/images/nn.png" height="50%" width="50%">
+		<p class="smaller">
+			Model to pewna rodzina funkcji - wkrótce zapoznacie się np z modelem liniowym, który charakteryzuje się prostotą
+		</p>
+	</section>
+
+	<section><h3>Trenowanie modelu </h3>
+		<img src="http://localhost:8000/public/images/nn.png" height="50%" width="50%">
+		<p class="smaller">
+			Trenowanie modelu to nic innego jak ustalanie/obliczanie/optymalizowanie parametrów modelu
+		</p>
+	</section>
+
+	<section><h3>Jak trenujemy modele uczenia maszynowego?</h3>
+		<img style="background-color: #ccc;" src="http://localhost:8000/public/images/nn.png" height="50%" width="50%">
+		<p class="smaller">Trenowanie modelu uczenia maszynowego to szukanie "najlepszych" parametrów danego modelu</p>
+	</section>
+	<section><h3>Czym są najlepsze parametry?</h3>
+		<p>
+			\[\begin{aligned}
+			MSE = \frac{1}{N} \sum^{N}_{i=1} (y_i - y^{\prime}_i)^2
+			\end{aligned} \]
+		</p>
+		<p class="smaller">Najlepsze parametry to takie które dopasowują nasz model do danych najlepiej - ściślej rzecz biorąc, to takie parametry które minimalizują błąd / różnice między predykowanym wartościami a prawdziwymi </p>
+	</section>
+
+	<section><h3>Co to jest inferencja?</h3>
+		<img style="background-color: #ccc;" src="http://localhost:8000/public/images/5.webp" height="25%" width="25%">
+		<p class="smaller">Inferencja (lub predykcja) to używanie już nauczonego/wytrenowanego modelu, np produkowanie prawdopodobieństwa "piątki" na zdjęciu 32x32</p>
+	</section>
+
+
+	<section><h3>Ćwiczenie: </h3>
+		<img src="http://localhost:8000/public/images/brain.png" height="10%"  width="10%">
+		<p class="smaller">
+			W tym ćwiczeniu wczytamy zbiór danych do pandas dataframe i zaimplementujemy optymalizację pewnego modelu metodą "brute force" - tzn przeiterujemy przez "grid" parametrów by znaleść najlepszy ich zestaw.
+			Tych najlepszych wag użyjemy następnie do inferencji
+
+		</p>
+
+	</section>
+
+</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+			});
+		</script>yes 
+	</body>
+</html>

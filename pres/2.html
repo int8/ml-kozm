@@ -24,61 +24,167 @@
 	</head>
 	<body>
 		<div class="reveal">
+<!--			<div class="slides">-->
+<!--				<section>-->
+<!--					<h3>Module 7 - Machine Learning</h3>-->
+<!--					<img src="http://localhost:8000/public/images/logo.png" height="25%"  width="25%"> -->
+<!--					-->
+<!--					<div class="medium">-->
+<!--						Kamil Czarnogórski <br />-->
+<!--						kamil@czarnogorski.pl <br />						-->
+<!--						int8@github-->
+<!--					</div>-->
+<!--					 -->
+<!--					-->
+<!--				</section>-->
+<!--				<section><h3>Introduction to Machine Learning</h3> </section>-->
+<!--				<section>-->
+<!--					<h5>What is machine learning? How is it different than traditional computing?</h5> -->
+<!--					<img src="http://localhost:8000/public/images/trad.png" height="70%"  width="70%"> -->
+<!--				</section>-->
+
+<!--				<section>-->
+<!--					<h5>What is machine learning? How is it different than traditional computing?</h5> -->
+<!--					<img src="http://localhost:8000/public/images/ml-process.webp" height="70%"  width="70%"> -->
+<!--				</section>-->
+
+<!--				<section>-->
+<!--					<h5>Write a program that detects handwritten "5" on 32x32 pixel image </h5> -->
+<!--					<img src="http://localhost:8000/public/images/5.webp" height="50%"  width="50%"> -->
+<!--				</section>-->
+
+
+<!--				<section><h5>Write a program that "detects" handwritten "5" on 32x32 pixel image </h5> -->
+<!--					<pre>-->
+<!--						<code data-trim data-noescape class="code">-->
+<!--							def is_five(image: np.array):-->
+<!--								"""-->
+<!--								Very brave attempt to figure our bunch of rules that distinguish handrwitten "5" from other digits -->
+<!--								"""-->
+<!--								if image[0][0] == 0 and image[0][1] == 0 and ...-->
+<!--									return True -->
+<!--								if image[5][6] > 0 and image[4][3] > 0 and ...-->
+<!--									return False -->
+<!--								if image[0][0] == 0 and image[0][1] == 0 and ...-->
+<!--									return False -->
+<!--								...								-->
+<!--								# anxiety kick in here 								-->
+<!--								# rage linkedin profile update 								-->
+<!--								# quitting your job -->
+
+<!--						</code>-->
+<!--					</pre>-->
+<!--					-->
+<!--				</section>-->
+
+
+<!--				<section> <h5>Train neural network that "detects" handwritten "5" on 32x32 pixel image </h5> -->
+<!--					<pre>-->
+<!--						<code data-trim data-noescape class="code">-->
+<!--							model = tf.keras.models.Sequential([-->
+<!--								tf.keras.layers.Flatten(input_shape=(32, 32)),-->
+<!--								tf.keras.layers.Dense(32 * 32, activation='relu'),-->
+<!--								tf.keras.layers.Dense(1, activation='sigmoid')-->
+<!--							])-->
+<!--							model.compile(-->
+<!--								optimizer=tf.keras.optimizers.Adam(0.001),-->
+<!--								loss=tf.keras.losses.BinaryCrossentropy(),-->
+<!--								metrics=[tf.keras.metrics.BinaryAccuracy()]-->
+<!--							)-->
+<!--							-->
+<!--							model.fit(-->
+<!--								ds_train, epochs=6, validation_data=ds_test,-->
+<!--							)													-->
+<!--						</code>-->
+<!--					</pre>-->
+<!--				</section>-->
+<!--				<section><h3>Supervised / Unsupervised learning / Reinforcement Learning </h3> -->
+<!--					<img  style="background-color: #aaa;" src="http://localhost:8000/public/images/types-ml.png" height="70%"  width="70%"> 					-->
+<!--				</section>-->
+<!--			-->
+<!--				<section><h3>Supervised learning</h3> -->
+<!--					<img  style="background-color: #aaa;" src="http://localhost:8000/public/images/ml-process-supervised.webp" height="70%"  width="70%">-->
+<!--					<p>-->
+<!--					<a class="smaller" href="https://huggingface.co/spaces/nazianafis/Sentiment-Analysis">-->
+<!--						sentiment analysis example-->
+<!--					</a>-->
+<!--					</p>-->
+<!--				</section>-->
+
+<!--				<section><h3>Unsupervised learning</h3> -->
+<!--					<img  style="background-color: #aaa;" src="http://localhost:8000/public/images/ml-process-unsupervised.webp" height="70%"  width="70%">-->
+
+<!--					<p>-->
+<!--						<a class="smaller" href="http://cp2077.int8.io/"> data visualization example </a>-->
+<!--					</p>-->
+
+<!--				</section>-->
+<!--			-->
+<!--				<section><h3>Reinforcement learning</h3> -->
+<!--					<img  style="background-color: #aaa;" src="http://localhost:8000/public/images/reinforcement.webp" height="70%"  width="70%">-->
+<!--					<p>-->
+<!--						<a class="smaller" href="https://www.youtube.com/watch?v=tfb6aEUMC04">-->
+<!--							AI vs Humans (DOTA2)-->
+<!--						</a>-->
+<!--					</p>-->
+<!--				</section>-->
+<!--			-->
+<!--			</div>-->
 			<div class="slides">
 				<section>
-					<h3>Module 7 - Machine Learning</h3>
-					<img src="http://localhost:8000/public/images/logo.png" height="25%"  width="25%"> 
-					
+					<h3>Wstęp do Uczenia Maszynowego</h3>
+					<img src="http://localhost:8000/public/images/logo.png" height="25%"  width="25%">
+
 					<div class="medium">
 						Kamil Czarnogórski <br />
-						kamil@czarnogorski.pl <br />						
+						kamil@czarnogorski.pl <br />
 						int8@github
 					</div>
-					 
-					
-				</section>
-				<section><h3>Introduction to Machine Learning</h3> </section>
-				<section>
-					<h5>What is machine learning? How is it different than traditional computing?</h5> 
-					<img src="http://localhost:8000/public/images/trad.png" height="70%"  width="70%"> 
-				</section>
 
+
+				</section>
+				<section><h3>Wprowadzenie do Uczenia Maszynowego</h3> </section>
 				<section>
-					<h5>What is machine learning? How is it different than traditional computing?</h5> 
-					<img src="http://localhost:8000/public/images/ml-process.webp" height="70%"  width="70%"> 
+					<h5>Co to jest uczenie maszynowe? Jak różni się od tradycyjnego programowania?</h5>
+					<img src="http://localhost:8000/public/images/trad.png" height="70%"  width="70%">
 				</section>
 
 				<section>
-					<h5>Write a program that detects handwritten "5" on 32x32 pixel image </h5> 
-					<img src="http://localhost:8000/public/images/5.webp" height="50%"  width="50%"> 
+					<h5>Co to jest uczenie maszynowe? Jak różni się od tradycyjnego programowania?</h5>
+					<img src="http://localhost:8000/public/images/ml-process.webp" height="70%"  width="70%">
+				</section>
+
+				<section>
+					<h5>Napisz program, który wykrywa ręcznie pisane "5" na obrazku 32x32 piksele </h5>
+					<img src="http://localhost:8000/public/images/5.webp" height="50%"  width="50%">
 				</section>
 
 
-				<section><h5>Write a program that "detects" handwritten "5" on 32x32 pixel image </h5> 
+				<section><h5>Napisz program, który "wykrywa" ręcznie pisane "5" na obrazku 32x32 piksele </h5>
 					<pre>
 						<code data-trim data-noescape class="code">
 							def is_five(image: np.array):
 								"""
-								Very brave attempt to figure our bunch of rules that distinguish handrwitten "5" from other digits 
+								Bardzo odważna próba sformułowania szeregu reguł, które odróżniają ręcznie pisane "5" od innych cyfr
 								"""
 								if image[0][0] == 0 and image[0][1] == 0 and ...
-									return True 
+									return True
 								if image[5][6] > 0 and image[4][3] > 0 and ...
-									return False 
+									return False
 								if image[0][0] == 0 and image[0][1] == 0 and ...
-									return False 
-								...								
-								# anxiety kick in here 								
-								# rage linkedin profile update 								
-								# quitting your job 
+									return False
+								...
+								# frustracja
+								# aktualizacja profilu LinkedIn
+								# zmiana pracy
 
 						</code>
 					</pre>
-					
+
 				</section>
 
 
-				<section> <h5>Train neural network that "detects" handwritten "5" on 32x32 pixel image </h5> 
+				<section> <h5>Trenowanie sieci neuronowej, która "wykrywa" ręcznie pisane "5" na obrazku 32x32  </h5>
 					<pre>
 						<code data-trim data-noescape class="code">
 							model = tf.keras.models.Sequential([
@@ -91,44 +197,43 @@
 								loss=tf.keras.losses.BinaryCrossentropy(),
 								metrics=[tf.keras.metrics.BinaryAccuracy()]
 							)
-							
+
 							model.fit(
 								ds_train, epochs=6, validation_data=ds_test,
-							)													
+							)
 						</code>
 					</pre>
 				</section>
-				<section><h3>Supervised / Unsupervised learning / Reinforcement Learning </h3> 
-					<img  style="background-color: #aaa;" src="http://localhost:8000/public/images/types-ml.png" height="70%"  width="70%"> 					
+				<section><h3>Taksonomia algorytmów uczenia maszynowego </h3>
+					<img  style="background-color: #aaa;" src="http://localhost:8000/public/images/types-ml.png" height="70%"  width="70%">
 				</section>
-			
-				<section><h3>Supervised learning</h3> 
+
+				<section><h3>Uczenie z nadzorem</h3>
 					<img  style="background-color: #aaa;" src="http://localhost:8000/public/images/ml-process-supervised.webp" height="70%"  width="70%">
 					<p>
 					<a class="smaller" href="https://huggingface.co/spaces/nazianafis/Sentiment-Analysis">
-						sentiment analysis example
+						przykład analizy sentymentu
 					</a>
 					</p>
 				</section>
 
-				<section><h3>Unsupervised learning</h3> 
+				<section><h3>Uczenie bez nadzoru</h3>
 					<img  style="background-color: #aaa;" src="http://localhost:8000/public/images/ml-process-unsupervised.webp" height="70%"  width="70%">
 
 					<p>
-						<a class="smaller" href="http://cp2077.int8.io/"> data visualization example </a>
+						<a class="smaller" href="http://cp2077.int8.io/"> przykład wizualizacji danych </a>
 					</p>
 
 				</section>
-			
-				<section><h3>Reinforcement learning</h3> 
+
+				<section><h3>Uczenie ze wzmocnieniem</h3>
 					<img  style="background-color: #aaa;" src="http://localhost:8000/public/images/reinforcement.webp" height="70%"  width="70%">
 					<p>
 						<a class="smaller" href="https://www.youtube.com/watch?v=tfb6aEUMC04">
-							AI vs Humans (DOTA2)
+							AI kontra ludzie (DOTA2)
 						</a>
 					</p>
 				</section>
-			
 			</div>
 		</div>
 
