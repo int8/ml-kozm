@@ -1,14 +1,14 @@
-# Machine Learning
+# Uczenie maszynowe
 
-Below, I present the instructions for the necessary steps to be taken before the classes.
-
-
-## Hardware requirements
-
-Virtual Machine with Ubuntu 20.04, **RAM** minimum of 5918MB, preferably 8192MB, storage 30GB for convenience 40GB.
+Instrukcje dotyczące niezbędnych kroków, które należy podjąć przed rozpoczęciem zajęć.
 
 
-## Source code:
+## Wymagania sprzętowe
+
+Wirtualna maszyna z Ubuntu 20.04, preferowane 8192MB RAM, pamięć 30GB dla wygody 40GB.
+
+
+## Kod źródłowy:
 ```shell 
 cd 
 git clone https://github.com/int8/ml7-kozm
@@ -16,29 +16,24 @@ cd ml7-kozm
 ```
 
 
+## Instalacja venv
+Pomoże nam zarządzać środowiskami.
 
-## Installing venv
-It will help us manage Python versions and environments.
-
-First, let's install the packages needed to install the correct versions of Python in the Ubuntu system.
+Najpierw zainstalujmy pakiety potrzebne do instalacji poprawnych wersji Pythona w systemie Ubuntu.
 ```bash
 sudo apt-get update
 sudo apt-get install curl python3-venv 
 ```
 
-This will take a moment
-
-## Creating a Python environment
-
-
-Let's verify if the version of Python we are using is higher than 3.7.
+## Tworzenie środowiska Pythona
+Sprawdźmy, czy wersja Pythona, której używamy, jest wyższa niż 3.7.
 
 ```shell 
 python3 --version 
 ```
 
 
-If so, we can proceed to create a virtual environment.
+Jeśli tak, możemy przejść do tworzenia wirtualnego środowiska.
 
 ```shell 
 python3 -m venv mlcourse 
@@ -46,24 +41,24 @@ source mlcourse/bin/activate
 ```
 
 
-After activating the environment, your prompt will inform you about the virtual environment.
+Po aktywacji środowiska, twój prompt poinformuje cię o wirtualnym środowisku.
 
-Now we install the required packages.
+Instalujemy wymagane pakiety.
 ```shell
 pip install -r requirements.txt 
 ```
 
 
-## Starting (and resuming work)
-Whenever resuming work (restarting the computer and the virtual machine), please go to:
+## Rozpoczęcie (i wznowienie pracy)
+Kiedy wracasz do pracy (restartujesz komputer i wirtualną maszynę), przejdź do:
 ```bash
 cd $HOME/ml7-kozm
 ```
-activate the environment named *mlcourse*:
+i aktywuj środowisko o nazwie *mlcourse*:
 ```bash
 source mlcourse/bin/activate 
 ```
-Then, call the **Jupyter Notebook** tool
+Następnie, uruchom narzędzie **Jupyter Notebook**
 ```bash
 jupyter notebook
 ```
