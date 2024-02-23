@@ -5,7 +5,7 @@ Instrukcje dotyczące niezbędnych kroków, które należy podjąć przed rozpoc
 
 ## Wymagania sprzętowe
 
-Wirtualna maszyna z Ubuntu 20.04, preferowane 8192MB RAM, pamięć 30GB dla wygody 40GB.
+Wirtualna maszyna z Ubuntu 22.04, preferowane 16G RAM
 
 
 ## Kod źródłowy:

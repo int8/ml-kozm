@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Module 7 - Machine Learning</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<style>
+			.smaller {
+			  font-size: 16px;
+			}
+			.twocolumn {
+			   display: grid;
+			   grid-template-columns: 1fr 1fr;
+			   grid-gap: 10px;
+			   text-align: left;
+			}
+		  </style>
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>Sieci neuronowe</h3>
+					<img src="http://localhost:8000/public/images/logo.png" height="25%"  width="25%">
+
+				</section>
+				<section><h3>Multi-Layer Perceptron</h3> </section>
+				<section><h3>Multi-Layer Perceptron</h3>
+					<img style="background-color: #ccc;" src="http://localhost:8000/public/images/mlp.jpg" height="50%"  width="50%">
+					<p class="smaller">
+					MLP ma wiele warstw. Każda warstawa "konsumuje" output poprzedniej warstwy - tzw aktywacje. Pierwsza warstwa "konsumuje" wektor wejściowy.
+					</p>
+				</section>
+
+				<section><h3>Multi-Layer Perceptron</h3>
+					<img style="background-color: #ccc;" src="http://localhost:8000/public/images/single-neuron.jpg" height="50%"  width="50%">
+					<p class="smaller">
+					Każdy jeden neuron to funkcja bardzo podobna do tej którą już widzieliście w wypadku regresji liniowej. To "aktywowana" kombinacja liniowa neuronów poprzedniej warstwy sieci neuronowej.
+					</p>
+				</section>
+
+				<section><h3>Czym jest aktywacja? </h3>
+					<img style="background-color: #ccc;" src="http://localhost:8000/public/images/sigmoid.png" height="50%"  width="50%">
+				 \[\begin{aligned}
+					f(x) = \frac{1}{1+e^{-x}}
+				  \end{aligned} \]
+				</section>
+				<section><h3>Czym jest aktywacja? </h3>
+					<img style="background-color: #ccc;" src="http://localhost:8000/public/images/single-neuron-activated.jpg" height="50%"  width="50%">
+				</section>
+
+				<section><h3>Ćwiczenie: </h3>
+					<img src="http://localhost:8000/public/images/brain.png" height="10%"  width="10%">
+					<p class="smaller">
+						Twoim zadaniem będzie zaprojektowanie architektury sieci neuronowej która "konsumuje" wektor o długości 784, składa się z 3 warstw.
+						Pierwsza warstwa składa się z 50 neuronów, druga z 15 neuronów a trzeba z jednego neuronu, aktywacjami każdego neuronu jest sigmoid.
+
+						<br/> <br/>
+						Użyjemy biblioteki pytorch
+					</p>
+				</section>
+
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath]
+			});
+		</script>
+	</body>
+</html>
