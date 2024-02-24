@@ -12,7 +12,7 @@ Wirtualna maszyna z Ubuntu 22.04, preferowane 16G RAM
 ```shell 
 cd 
 git clone https://github.com/int8/ml-kozm
-cd ml7-kozm
+cd ml-kozm
 ```
 
 
