@@ -11,8 +11,8 @@ Wirtualna maszyna z Ubuntu 22.04, preferowane 16G RAM
 ## Kod źródłowy:
 ```shell 
 cd 
-git clone https://github.com/int8/ml7-kozm
-cd ml7-kozm
+git clone https://github.com/int8/ml-kozm
+cd ml-kozm
 ```
 
 
