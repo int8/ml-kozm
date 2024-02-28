@@ -30,6 +30,6 @@ oraz uruchom `jupyter notebook`
 juz w jupyterze nawiguj do katalogu `praca-domowa` 
 
 1. Uruchom i rozwiąż Task1A
-2. Uruchom i rozwiąż Task1A
+2. Uruchom i rozwiąż Task1B
 3. Uruchom i rozwiąż Task2
 
