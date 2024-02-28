@@ -6,7 +6,7 @@
 2. wejdź do terminala 
 3. `cd` # == idź do katalogu domowego 
 4. `cd ml-kozm` # wejdź do repo 
-5. `mkdir -p local_work` # utwórz katalog w którym bedziesz miał kopie swojej pracy na poprzednich zajęciac
+5. `mkdir -p local_work` # utwórz katalog w którym bedziesz miał kopie swojej pracy z poprzednich zajęć
 6. `cp *.ipynb local_work` # skopiuj swoją pracę do local_work (ten katalog jest ignorowany przez git)
 7. `ls local_work` # upewnij się że to polecenie listuje Twoje notebooki 
 8. `git stash` 
