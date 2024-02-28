@@ -10,7 +10,9 @@
 6. `cp *.ipynb local_work` # skopiuj swoją pracę do local_work (ten katalog jest ignorowany przez git)
 7. `ls local_work` # upewnij się że to polecenie listuje Twoje notebooki 
 8. `git stash` 
-9. `git checkout homework`
+9. `git branch --set-upstream-to=origin/master`
+10. `git pull`
+11. `git checkout homework`
 
 
 
