@@ -163,3 +163,4 @@ cython_debug/
 .idea/
 .ipynb_checkpoints/
 mlcourse/
+local_work/
