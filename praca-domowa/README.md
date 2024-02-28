@@ -17,7 +17,7 @@
 
 
 W tym momencie o ile wszystko poszło pomyślnie, 
-powinieneś zobaczyć nowy katalog `praca-domowa`
+powinieneś/powinnaś zobaczyć nowy katalog `praca-domowa`
 
 
 Aktywuj wirtualne środowisko python 
