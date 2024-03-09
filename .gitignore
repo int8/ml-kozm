@@ -164,3 +164,6 @@ cython_debug/
 .ipynb_checkpoints/
 mlcourse/
 local_work/
+week2/runs
+*.gz
+*.pkl
